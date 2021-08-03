@@ -133,22 +133,22 @@
                 </ActivityAction>
               </ueab:ExcelForEachRowX.Body>
             </ueab:ExcelForEachRowX>
-            <ui:CopyFolderX From="{x:Null}" To="{x:Null}" DisplayName="Copy Folder" sap:VirtualizedContainerService.HintSize="466,156" sap2010:WorkflowViewState.IdRef="CopyFolderX_1" IncludeSubfolders="True" Overwrite="True" />
-            <ui:MoveFolderX From="{x:Null}" To="{x:Null}" DisplayName="Move Folder" sap:VirtualizedContainerService.HintSize="466,156" sap2010:WorkflowViewState.IdRef="MoveFolderX_1" Overwrite="True" />
-            <p:WordAppendText Text="{x:Null}" DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="466,103" sap2010:WorkflowViewState.IdRef="WordAppendText_1" />
-            <ui:PowerPointApplicationScope Password="{x:Null}" CreateIfNotExists="True" DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="466,598" sap2010:WorkflowViewState.IdRef="PowerPointApplicationScope_1" PresentationPath="New Microsoft PowerPoint Presentation.pptx">
+            <ui:CopyFolderX From="{x:Null}" To="{x:Null}" DisplayName="Copy Folder" sap:VirtualizedContainerService.HintSize="466,156" IncludeSubfolders="True" Overwrite="True" />
+            <ui:MoveFolderX From="{x:Null}" To="{x:Null}" DisplayName="Move Folder" sap:VirtualizedContainerService.HintSize="466,156" Overwrite="True" />
+            <p:WordAppendText Text="{x:Null}" DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="466,103" />
+            <ui:PowerPointApplicationScope Password="{x:Null}" CreateIfNotExists="True" DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="466,598" PresentationPath="New Microsoft PowerPoint Presentation.pptx">
               <ui:PowerPointApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:IPresentationQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:IPresentationQuickHandle" Name="PowerPoint" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="454,347" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="454,347">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:CopyPasteSlide DestinationPresentation="{x:Null}" SlideToCopy="{x:Null}" WhereToInsert="{x:Null}" DisplayName="Copy Paste Slide" sap:VirtualizedContainerService.HintSize="412,257" sap2010:WorkflowViewState.IdRef="CopyPasteSlide_1" Move="False" SourcePresentation="[PowerPoint]" />
+                    <ui:CopyPasteSlide DestinationPresentation="{x:Null}" SlideToCopy="{x:Null}" WhereToInsert="{x:Null}" DisplayName="Copy Paste Slide" sap:VirtualizedContainerService.HintSize="412,257" Move="False" SourcePresentation="[PowerPoint]" />
                   </Sequence>
                 </ActivityAction>
               </ui:PowerPointApplicationScope.Body>
