@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1293,3957" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="470,371" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
       <x:String>System.Activities</x:String>
@@ -27,7 +27,6 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>UiPath.Mail</x:String>
       <x:String>UiPath.Presentations</x:String>
-      <x:String>UiPath.Presentations.Activities</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -55,127 +54,12 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.Presentations</AssemblyReference>
       <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.Word</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <sap:WorkflowViewStateService.ViewState>
-    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
-      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
-    </scg:Dictionary>
-  </sap:WorkflowViewStateService.ViewState>
-  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="562,3892" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+  <ueab:SequenceX>
     <ueab:SequenceX.Variables>
-      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name=" Meh" />
       <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
     </ueab:SequenceX.Variables>
-    <sap:WorkflowViewStateService.ViewState>
-      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-      </scg:Dictionary>
-    </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" WorkbookPath="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="520,2656" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" UseTemplate="True">
-      <ueab:ExcelApplicationCard.Body>
-        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="508,2362" sap2010:WorkflowViewState.IdRef="Sequence_1">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelForEachRowX Range="{x:Null}" DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="466,1099" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" SaveAfterEachRow="False">
-              <ueab:ExcelForEachRowX.Body>
-                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
-                  <ActivityAction.Argument1>
-                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
-                  </ActivityAction.Argument1>
-                  <ActivityAction.Argument2>
-                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
-                  </ActivityAction.Argument2>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="454,914" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ueab:FilterX ColumnName="{x:Null}" FilterArgument="{x:Null}" Range="{x:Null}" ClearFilter="False" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="412,167" sap2010:WorkflowViewState.IdRef="FilterX_1" />
-                    <ueab:WriteRangeX Destination="{x:Null}" Source="{x:Null}" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="412,161" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" />
-                    <ueab:SortX Range="{x:Null}" DisplayName="Sort Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="412,215" sap2010:WorkflowViewState.IdRef="SortX_1">
-                      <ueab:SortX.Body>
-                        <ActivityAction>
-                          <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_2">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ueab:SortColumnX ColumnName="{x:Null}" DisplayName="Sort By Column" sap:VirtualizedContainerService.HintSize="382,60" sap2010:WorkflowViewState.IdRef="SortColumnX_1" SortDirection="Ascending" />
-                          </Sequence>
-                        </ActivityAction>
-                      </ueab:SortX.Body>
-                    </ueab:SortX>
-                    <ueab:RemoveDuplicatesX Range="{x:Null}" DisplayName="Remove Duplicates" sap:VirtualizedContainerService.HintSize="412,161" sap2010:WorkflowViewState.IdRef="RemoveDuplicatesX_1">
-                      <ueab:RemoveDuplicatesX.Columns>
-                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
-                      </ueab:RemoveDuplicatesX.Columns>
-                    </ueab:RemoveDuplicatesX>
-                  </Sequence>
-                </ActivityAction>
-              </ueab:ExcelForEachRowX.Body>
-            </ueab:ExcelForEachRowX>
-            <ui:CopyFolderX From="{x:Null}" To="{x:Null}" DisplayName="Copy Folder" sap:VirtualizedContainerService.HintSize="466,156" sap2010:WorkflowViewState.IdRef="CopyFolderX_1" IncludeSubfolders="True" Overwrite="True" />
-            <ui:MoveFolderX From="{x:Null}" To="{x:Null}" DisplayName="Move Folder" sap:VirtualizedContainerService.HintSize="466,156" sap2010:WorkflowViewState.IdRef="MoveFolderX_1" Overwrite="True" />
-            <p:WordAppendText Text="{x:Null}" DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="466,103" sap2010:WorkflowViewState.IdRef="WordAppendText_1" />
-            <ui:PowerPointApplicationScope Password="{x:Null}" CreateIfNotExists="True" DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="466,598" sap2010:WorkflowViewState.IdRef="PowerPointApplicationScope_1" PresentationPath="New Microsoft PowerPoint Presentation.pptx">
-              <ui:PowerPointApplicationScope.Body>
-                <ActivityAction x:TypeArguments="ui:IPresentationQuickHandle">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="ui:IPresentationQuickHandle" Name="PowerPoint" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="454,347" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:CopyPasteSlide DestinationPresentation="{x:Null}" SlideToCopy="{x:Null}" WhereToInsert="{x:Null}" DisplayName="Copy Paste Slide" sap:VirtualizedContainerService.HintSize="412,257" sap2010:WorkflowViewState.IdRef="CopyPasteSlide_1" Move="False" SourcePresentation="[PowerPoint]" />
-                  </Sequence>
-                </ActivityAction>
-              </ui:PowerPointApplicationScope.Body>
-            </ui:PowerPointApplicationScope>
-          </Sequence>
-        </ActivityAction>
-      </ueab:ExcelApplicationCard.Body>
-    </ueab:ExcelApplicationCard>
-    <ueab:FillRangeX DestinationRange="{x:Null}" Value="{x:Null}" DisplayName="Fill Range" sap:VirtualizedContainerService.HintSize="520,136" sap2010:WorkflowViewState.IdRef="FillRangeX_1" />
-    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="520,930" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" WorkbookPath="[string.Format(&quot;{0}\DU Offline translation.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory))]">
-      <ueab:ExcelApplicationCard.Body>
-        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="454,659" sap2010:WorkflowViewState.IdRef="Sequence_4">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B12&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="412,219" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_1" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;B2&quot;)]" Transpose="False" />
-            <ui:RenameFileX FilePath="{x:Null}" NewName="{x:Null}" DisplayName="Rename File" sap:VirtualizedContainerService.HintSize="412,140" sap2010:WorkflowViewState.IdRef="RenameFileX_1" KeepExtension="True" />
-            <ui:RenameFolderX FolderPath="{x:Null}" NewName="{x:Null}" DisplayName="Rename Folder" sap:VirtualizedContainerService.HintSize="412,130" sap2010:WorkflowViewState.IdRef="RenameFolderX_1" />
-          </Sequence>
-        </ActivityAction>
-      </ueab:ExcelApplicationCard.Body>
-    </ueab:ExcelApplicationCard>
   </ueab:SequenceX>
 </Activity>
