@@ -1,0 +1,62 @@
+{
+  "name": "NewBlankTask1",
+  "description": "Start with a blank project to design a new task automation",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.ComplexScenarios.Activities": "[1.1.4-alpha.1525137]",
+    "UiPath.Excel.Activities": "[2.11.2-alpha.1795571]",
+    "UiPath.Mail.Activities": "[1.11.2-alpha.1798799]",
+    "UiPath.Presentations.Activities": "[1.2.2-alpha.1795572]",
+    "UiPath.System.Activities": "[21.8.0-alpha.1798955]",
+    "UiPath.UIAutomation.Activities": "[21.8.0-beta.1802059]",
+    "UiPath.UIAutomationX.Activities": "[2.1.0-alpha.775862]",
+    "UiPath.Word.Activities": "[1.7.2-alpha.1795567]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.8.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
+    "autoDispose": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false
+  },
+  "designOptions": {
+    "projectProfile": "Business",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "3fc5fba0-f20a-4220-9e49-ed04c185184d",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}
