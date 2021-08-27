@@ -6,9 +6,10 @@
     "UiPath.ComplexScenarios.Activities": "[1.1.4-alpha.1525137]",
     "UiPath.Excel.Activities": "[2.11.2-alpha.1848925]",
     "UiPath.Mail.Activities": "[1.12.0-alpha.1848268]",
-    "UiPath.Presentations.Activities": "[1.2.2-alpha.1844982]",
-    "UiPath.System.Activities": "[21.10.0-alpha.1837810]",
-    "UiPath.UIAutomation.Activities": "[21.10.0-beta.1850576]",
+    "UiPath.MicrosoftOffice365.Activities": "[1.11.0-alpha.1844968]",
+    "UiPath.Presentations.Activities": "[1.2.2-alpha.1851927]",
+    "UiPath.System.Activities": "[21.10.0-alpha.1852032]",
+    "UiPath.UIAutomation.Activities": "[21.10.0-beta.1851797]",
     "UiPath.Word.Activities": "[1.7.2-alpha.1844972]"
   },
   "webServices": [],
